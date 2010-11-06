@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="VideoCapture.Silverlight.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="LayoutRoot" Background="White" Width="480" Margin="20">
+        <StackPanel Width="450">
+            <Border>
+                <Border.Effect>
+                    <DropShadowEffect Color="#000000" BlurRadius="20" Direction="1" ShadowDepth="0" />
+                </Border.Effect>
+                <Rectangle Fill="White" x:Name="videoSurface" Width="450" Height="337"/>
+            </Border>
+            <StackPanel Margin="10" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Content="Record" Width="70" Margin="5" Click="ToggleDevice" x:Name="toggleButton"/>
+                <Button Content="Play" Width="70" Margin="5" Click="PlayClick" x:Name="playButton"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="Video Capture Devices:"/>
+                <ComboBox x:Name="deviceList" SelectionChanged="DeviceChanged">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding FriendlyName}"/>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+
+
+                <MediaElement x:Name="media" Width="450" Height="337"/>
+
+
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>

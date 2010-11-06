@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="MediaInTheCloud.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" xmlns:local="clr-namespace:MediaInTheCloud"  
+             xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk" 
+             d:DesignHeight="450" d:DesignWidth="720">
+    <UserControl.Resources>
+
+    </UserControl.Resources>
+    <Grid x:Name="LayoutRoot" Width="720" Height="450">
+        <MediaElement x:Name="media"/>
+        <StackPanel>
+            <Grid Margin="10 0 0 0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Take Pics n Stuff!" FontSize="25" />
+                <StackPanel Orientation="Horizontal" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right">
+                    <TextBlock Text="Online Status: " FontSize="15"/>
+                    <local:OnlineStatus Margin="0 0 15 0" />
+                </StackPanel>
+            </Grid>
+            <StackPanel Orientation="Horizontal" Width="700" Height="400" VerticalAlignment="Center">
+                <sdk:TabControl Width="340" Height="400" 
+                   ItemsSource="{Binding Tabs}" SelectedItem="{Binding SelectedTab, Mode=TwoWay}">
+                </sdk:TabControl>
+                <StackPanel Margin="10 30 0 0">
+                    <TextBlock Text="Local Items" FontSize="15"/>
+                    <local:MediaItemList DataContext="{Binding LocalMediaItems}" Width="350"/>
+
+                    <TextBlock Text="Server Items" FontSize="15" Margin="0 30 0 0"/>
+                    <local:MediaItemList DataContext="{Binding ServerMediaItems}" Width="350"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>

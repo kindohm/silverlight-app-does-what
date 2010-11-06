@@ -1,0 +1,29 @@
+﻿html, body {
+    height: 100%;
+    overflow: auto;
+    font-family: Verdana;
+    font-size: 13px;
+}
+body {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+#silverlightControlHost {
+    text-align: center;
+}
+
+#main {
+    width: 720px;
+    text-align: left;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    font-weight: normal;
+}
+
+li{
+    margin-bottom: 5px;
+}

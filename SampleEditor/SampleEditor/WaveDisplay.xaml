@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="SampleEditor.WaveDisplay"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Canvas Width="680" Height="200" x:Name="audioCanvas" MouseLeftButtonDown="CanvasMouseDown" 
+                    MouseLeftButtonUp="CanvasMouseUp" MouseMove="CanvasMouseMove" MouseLeave="CanvasMouseLeave">
+        <Canvas.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Offset="0" Color="#999999"/>
+                <GradientStop Offset=".5" Color="#EEEEEE"/>
+                <GradientStop Offset="1" Color="#999999"/>
+            </LinearGradientBrush>
+        </Canvas.Background>
+        <Canvas.Effect>
+            <DropShadowEffect Color="#000000" BlurRadius="20" Direction="1" Opacity="1" ShadowDepth="1"/>
+        </Canvas.Effect>
+        <MediaElement x:Name="media"/>
+        <Path Stroke="#FF3333" StrokeThickness="1" IsHitTestVisible="False">
+            <Path.Data>
+                <PathGeometry>
+                    <PathGeometry.Figures>
+                        <PathFigure x:Name="figure">
+                        </PathFigure>
+                    </PathGeometry.Figures>
+                </PathGeometry>
+            </Path.Data>
+        </Path>
+
+        <Rectangle x:Name="rectangle" Visibility="Collapsed" Height="200" Opacity=".5">
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Offset="0" Color="#336666"/>
+                    <GradientStop Offset=".5" Color="#99999999"/>
+                    <GradientStop Offset="1" Color="#336666"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+    </Canvas>
+</UserControl>

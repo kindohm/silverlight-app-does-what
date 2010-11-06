@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCamFun", "WebCamFun\WebCamFun.csproj", "{CFDDAF70-7117-4A9C-9007-78E9FD5A4A2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCamFun.Web", "WebCamFun.Web\WebCamFun.Web.csproj", "{891F39C7-BB12-4C87-AEE9-2E648CBA61E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositeCam", "CompositeCam\CompositeCam.csproj", "{F3472F82-D618-4A07-8458-CEF1D19E221A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoList", "VideoList\VideoList.csproj", "{FC969F08-5538-4F99-A7C2-6DD7CC23E9CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFDDAF70-7117-4A9C-9007-78E9FD5A4A2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFDDAF70-7117-4A9C-9007-78E9FD5A4A2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFDDAF70-7117-4A9C-9007-78E9FD5A4A2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFDDAF70-7117-4A9C-9007-78E9FD5A4A2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{891F39C7-BB12-4C87-AEE9-2E648CBA61E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{891F39C7-BB12-4C87-AEE9-2E648CBA61E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{891F39C7-BB12-4C87-AEE9-2E648CBA61E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{891F39C7-BB12-4C87-AEE9-2E648CBA61E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3472F82-D618-4A07-8458-CEF1D19E221A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3472F82-D618-4A07-8458-CEF1D19E221A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3472F82-D618-4A07-8458-CEF1D19E221A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3472F82-D618-4A07-8458-CEF1D19E221A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC969F08-5538-4F99-A7C2-6DD7CC23E9CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC969F08-5538-4F99-A7C2-6DD7CC23E9CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC969F08-5538-4F99-A7C2-6DD7CC23E9CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC969F08-5538-4F99-A7C2-6DD7CC23E9CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Silverlight Mic Sampler / Looper</title>
+    <link rel="Stylesheet" href="styles.css" />
+    <script type="text/javascript" src="Silverlight.js"></script>
+    <script type="text/javascript" src="onerror.js"></script>
+</head>
+<body>
+    <div id="main">
+        <h1>
+            Silverlight Mic Sampler / Looper</h1>
+        <div id="silverlightControlHost">
+            <object data="data:application/x-silverlight-2," type="application/x-silverlight-2"
+                width="720" height="270">
+                <param name="source" value="ClientBin/SampleEditor.xap" />
+                <param name="onError" value="onSilverlightError" />
+                <param name="background" value="white" />
+                <param name="minRuntimeVersion" value="4.0.50401.0" />
+                <param name="autoUpgrade" value="true" />
+                <a href="http://go.microsoft.com/fwlink/?LinkID=149156&v=4.0.50401.0" style="text-decoration: none">
+                    <img src="http://go.microsoft.com/fwlink/?LinkId=161376" alt="Get Microsoft Silverlight"
+                        style="border-style: none" />
+                </a>
+            </object>
+        </div>
+        <p>
+            <strong>Instructions</strong></p>
+        <ul>
+            <li>Click 'Record' and use your microphone to record an audio clip. Recording will stop
+                either when you click 'Stop' or after 1 MB of audio data has been recorded.</li>
+            <li>Click 'Play' to listen to your clip. The clip will loop and play infinitely until
+                you click 'Stop'</li>
+            <li>Click and drag on the graph to draw a selection around a portion of your your audio
+                clip. This will loop only that selection during playback. </li>
+            <li>After recording your voice, try selecting and playing a small region in the middle
+                of your clip for absolute silliness. Quiet, transient sounds are sometimes the most
+                fun.</li>
+        </ul>
+        <p>
+            <strong>Troubleshooting</strong></p>
+        <ul>
+            <li>If the app doesn't seem to be working, first make sure that you have a microphone
+                attached to your computer. You <em>must</em> have a microphone attached to your
+                computer for this app to work.</li>
+            <li>If you have trouble recording or hearing the audio during playback, try right-clicking
+                on the graph above and choose "Silverlight", then click the Webcam/Microphone tab
+                and make sure you have some default devices set up. This check seemed to fix problems
+                for a few other people.</li>
+        </ul>
+        <p>
+            Have fun!</p>
+        <p>
+            <a href="http://hodnick.com">Mike Hodnick | www.hodnick.com</a></p>
+    </div>
+</body>
+</html>

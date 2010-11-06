@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="NetworkAwareness.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="LayoutRoot" Width="610" Height="300">
+        <Border>
+            <Border.Effect>
+                <DropShadowEffect Color="#000000" Direction="1" ShadowDepth="0" BlurRadius="30"/>
+            </Border.Effect>
+            <Rectangle Fill="#FFFFFF" Width="610" Height="300"/>
+        </Border>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal" >
+                <TextBlock FontSize="25" Text="Oh noes! " x:Name="exclamationBox"/>
+                <TextBlock FontSize="25" Text="The network is: "/>
+                <TextBlock FontSize="25" x:Name="infoBox" Text="Unknown" FontWeight="Bold"/>
+            </StackPanel>
+            <ScrollViewer VerticalScrollBarVisibility="Auto" Height="200"
+                          HorizontalAlignment="Center" VerticalAlignment="Center">
+                <ItemsControl x:Name="history">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Width="530" />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding}" Height="20"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+        </StackPanel>
+    </Grid>
+</UserControl>

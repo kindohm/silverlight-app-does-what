@@ -1,0 +1,5 @@
+﻿<?xml version="1.0"?> 
+<!DOCTYPE cross-domain-policy> 
+<cross-domain-policy>   
+    <allow-http-request-headers-from domain="*" headers="*"/> 
+</cross-domain-policy> 

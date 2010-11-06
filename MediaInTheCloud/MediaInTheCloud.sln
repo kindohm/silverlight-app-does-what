@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaInTheCloud", "MediaInTheCloud\MediaInTheCloud.csproj", "{57148DC9-74B3-4E7B-86FE-636D48B7AB76}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assemblies", "Assemblies", "{F61AA875-9BBF-43F7-9137-22E02A09D262}"
+	ProjectSection(SolutionItems) = preProject
+		Assemblies\FJ.Core.dll = Assemblies\FJ.Core.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaInTheCloud.Host", "MediaInTheCloud.Host\MediaInTheCloud.Host.csproj", "{311D40CE-B10A-44FF-AB5F-BF92CA76C824}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57148DC9-74B3-4E7B-86FE-636D48B7AB76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57148DC9-74B3-4E7B-86FE-636D48B7AB76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57148DC9-74B3-4E7B-86FE-636D48B7AB76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57148DC9-74B3-4E7B-86FE-636D48B7AB76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{311D40CE-B10A-44FF-AB5F-BF92CA76C824}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{311D40CE-B10A-44FF-AB5F-BF92CA76C824}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{311D40CE-B10A-44FF-AB5F-BF92CA76C824}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{311D40CE-B10A-44FF-AB5F-BF92CA76C824}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
